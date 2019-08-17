@@ -1,0 +1,123 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.jumbotron {
+    background-color: inherit;
+}
+
+h1 {
+    color: cyan;
+}
+
+.instruction-text {
+    color: yellow;
+}
+
+.blank {
+    color: black;
+    background-color: cyan;
+    border-color: black;
+    width: 7%;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.game-status {
+    color: white;
+    height: 40%;
+    font-weight: bold;
+}
+
+.footer {
+    color: white;
+    height: 10%;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.win-align {
+    width: 50%;
+    float: left;
+    background-color: green;
+    text-align: center;
+    height:100%; 
+    border-radius: 25px;
+}
+
+.loss-align {
+    width: 50%;
+    float: left;
+    background-color: red;
+    text-align: center;
+    height:100%;
+    border-radius: 25px;
+}
+
+.hint-text {
+    font-style: italic;
+    color: white;
+    font-size: 10px;
+}
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+  }
+
+  #game-status {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+  
+#correct-word {
+    text-align: center;
+    font-size: 40px;
+    color: cyan;
+    font-weight: bold;
+}
+
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

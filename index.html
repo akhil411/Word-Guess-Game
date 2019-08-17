@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="assets/js/game.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+          <h1 class="text-center">
+            <strong>Hangman Game</strong>
+          </h1>
+          <hr>
+          <div id="instruction" class="text-center">
+              <span class="instruction-text">Press any alphabet to start!!</span>
+              <p class="hint-text">Hint: I am a Country!!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="data-left col-lg-12 text-center">
+                  <div id="blankAnswer-text"></div>
+                  <br>
+                  <div class="game-status">Your Last Guess: <span id="userChoice-text"></span> </div>
+                  <div class="game-status">Your Guesses so far: <span id="lastGuess-text"></span></div>
+                  <div class="game-status">Remaining Guess: <span id="remainingGuess-text"></span></div>
+
+          </div>
+        </div>
+        <div class="row">
+            <div class="footer col-lg-12 fixed-bottom">
+                <div class="loss-align">
+                    <p>Losses:  <span id="losses-text"></span></p>
+                  </div>
+                  <div class="win-align">
+                      <p>Wins: <span  id="wins-text"></span></p>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div id="game-status"></div>
+        <div id="correct-word"></div>
+    </div>  
+    
+</body>
+</html>
